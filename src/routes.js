@@ -10,6 +10,7 @@ export default function Routes() {
     <Switch>
       <Route path='/' exact component={Login} />
       <PrivateRoute path='/dragons' component={List} />
+      <Route path='*' component={Login} />
     </Switch>
   )
 }

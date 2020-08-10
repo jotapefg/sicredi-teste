@@ -13,7 +13,7 @@ function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if(email === 'teste@teste.com' && password === '123456') {
+    if(email === 'teste@teste.com' && password === '123') {
       localStorage.setItem('token', 'logado')
       history.push('/dragons')
     } else {

@@ -25,7 +25,7 @@ function List() {
           createdAt: createdAtSerialized,
         }
       })
-      console.log(dragonsSerialized.sort(sortDragonsByName))
+
       setDragons(dragonsSerialized.sort(sortDragonsByName));
       setLoading(false);
     }
@@ -53,7 +53,7 @@ function List() {
             {
               dragons.map(dragon => (
                 <Dragon key={dragon.id}>
-                  <Link to={`dragon/${dragon.id}`}>{dragon.name}</Link>
+                  <Link to={`dragons/${dragon.id}`}>{dragon.name}</Link>
                 </Dragon>
               ))
             }

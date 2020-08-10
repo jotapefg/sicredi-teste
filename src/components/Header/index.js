@@ -7,7 +7,7 @@ function Header() {
   return (
     <>
       <Container>
-        <Link to='/dragons'>Lista</Link>
+        <Link to='/dragons'>Listar</Link>
         <Link to='/dragons/add'>Criar Dragão</Link>
       </Container>
     </>

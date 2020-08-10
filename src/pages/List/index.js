@@ -17,12 +17,9 @@ function List() {
 
       
       const dragonsSerialized = data.map(dragon => {
-        let createdAtSerialized = dragon.createdAt.toString().split(`T`)[0].split(`-`).reverse().join(`-`)
         return {
           id: dragon.id,
-          name: dragon.name,
-          type: dragon.type,
-          createdAt: createdAtSerialized,
+          name: dragon.name
         }
       })
 

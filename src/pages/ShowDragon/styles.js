@@ -41,14 +41,18 @@ export const DragonForm = styled.form`
   }
   .button_save {
     margin-top: 30px;
+    color: rgba(0, 255, 20, .4);
     &:hover {
       border-color: rgba(0, 255, 20, .5);
+      color: rgba(0, 255, 20, 1);
     }
   }
   .button_delete {
     margin-top: 5px;
+    color: rgba(255, 0, 0, .4);
     &:hover {
       border-color: rgba(255, 0, 0, .5);
+      color: rgba(255, 0, 0, 1);
     }
   }
 `;

@@ -51,7 +51,7 @@ function ShowDragon() {
     if(dragon.name === '' || dragon.type === '') {
       toast.error('Todos os campos devem estar preenchidos.')
     } else {
-      const response = await api.put(`/dragon/${id}`);
+      const response = await api.put(`/dragon/${id}`, dragon);
       if(response.status === 200) {
         toast.success('Dragão editado com sucesso')
       }

@@ -48,11 +48,13 @@ function List() {
           <p>Escolha o seu dragão:</p>
           <DragonContainer>
             {
-              dragons.map(dragon => (
+              dragons.length > 0 ? dragons.map(dragon => (
                 <Dragon key={dragon.id}>
                   <Link to={`dragons/${dragon.id}`}>{dragon.name}</Link>
                 </Dragon>
-              ))
+              )) : (
+                <p>Nenhum dragão foi criado</p>
+              )
             }
           </DragonContainer>
         </Container>
